@@ -200,7 +200,7 @@ paths:
           description: "Pet not found"
     delete:
       tags:
-      - "pet"
+      - "goods"
       summary: "Deletes a pet"
       description: ""
       operationId: "deletePet"
