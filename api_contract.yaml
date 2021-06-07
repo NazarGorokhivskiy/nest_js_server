@@ -8,8 +8,8 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "petstore.swagger.io"
-basePath: "/v2"
+host: "localhost:3000"
+basePath: "/api"
 schemes:
 - "https"
 - "http"
@@ -101,7 +101,7 @@ paths:
         "400":
           description: "Invalid ID supplied"
         "404":
-          description: "Pet not found"
+          description: "Goods not found"
   /goods/{id}:
     patch:
       tags:
@@ -197,13 +197,13 @@ paths:
         "400":
           description: "Invalid ID supplied"
         "404":
-          description: "Pet not found"
+          description: "Goods not found"
     delete:
       tags:
       - "goods"
-      summary: "Deletes a pet"
+      summary: "Deletes a goods item"
       description: ""
-      operationId: "deletePet"
+      operationId: "deleteGoods"
       produces:
       - "application/json"
       parameters:
